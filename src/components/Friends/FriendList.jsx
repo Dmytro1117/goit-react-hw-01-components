@@ -20,10 +20,6 @@ export const FriendList = ({ friends }) => {
   );
 };
 
-FriendList.propTypes = {
-  friends: PropTypes.array.isRequired,
-};
-
 
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(

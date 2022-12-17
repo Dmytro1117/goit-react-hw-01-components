@@ -1,5 +1,16 @@
 import PropTypes from 'prop-types';
-import { ContainerProfile, ContainerDescription, ImgAvatar, ParName, ParTag, ParLocation, UlStats, LiStats, SpanLabel, SpanQuantity} from './Profile.styled';
+import {
+  ContainerProfile,
+  ContainerDescription,
+  ImgAvatar,
+  ParName,
+  ParTag,
+  ParLocation,
+  UlStats,
+  LiStats,
+  SpanLabel,
+  SpanQuantity,
+} from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
@@ -9,19 +20,19 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         <ParName>{username}</ParName>
         <ParTag>@{tag}</ParTag>
         <ParLocation>{location}</ParLocation>
-     </ContainerDescription>
+      </ContainerDescription>
 
       <UlStats>
         <LiStats>
-          <SpanLabel >Followers</SpanLabel>
+          <SpanLabel>Followers</SpanLabel>
           <SpanQuantity>{stats.followers}</SpanQuantity>
         </LiStats>
         <LiStats>
-          <SpanLabel >Views</SpanLabel>
+          <SpanLabel>Views</SpanLabel>
           <SpanQuantity>{stats.views}</SpanQuantity>
         </LiStats>
         <LiStats>
-          <SpanLabel >Likes</SpanLabel>
+          <SpanLabel>Likes</SpanLabel>
           <SpanQuantity>{stats.likes}</SpanQuantity>
         </LiStats>
       </UlStats>

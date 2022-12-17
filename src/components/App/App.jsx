@@ -8,11 +8,14 @@ import data from '../Data/data.json';
 import friends from '../Data/friends.json';
 import transactions from '../Data/transactions.json';
 
-import {Container} from './App.styled'
+// import { Container } from './App.styled'
+import { Box } from "../Box";
+
 
 export const App = () => {
   return (
-    <Container>
+
+    <Box p="16px">
       <Profile
         username={user.username}
         tag={user.tag}
@@ -23,6 +26,6 @@ export const App = () => {
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </Container>
+    </Box>
   );
 };

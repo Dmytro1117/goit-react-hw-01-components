@@ -67,5 +67,5 @@ export const SpanLabel = styled.span`
 
 export const SpanQuantity = styled.span`
   font-weight: 600;
-  font-size: 20px;
+  font-size: ${p => p.theme.fontsSizes.big};
 `;
